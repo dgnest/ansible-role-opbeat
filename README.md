@@ -30,6 +30,10 @@ Here is the list of all variables and their default values:
 ```yaml
     ---
     # defaults file for hadenlabs.opbeat
+    opbeat_organization_id: ''
+    opbeat_app_id: ''
+    opbeat_secret_token: ''
+    opbeat_project_path: ''
 ```
 
 
