@@ -1,0 +1,5 @@
+---
+# vars file for hadenlabs.opbeat (Ubuntu specific)
+
+_opbeat_package_dependencies:
+  - build-essential
