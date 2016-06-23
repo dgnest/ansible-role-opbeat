@@ -1,2 +1,9 @@
 ---
 # task for hadenlabs.opbeat
+
+- name: Upgrade Release Version
+  sudo_user: "{{ user }}"
+  shell: ". {{ _opbeat_file }}"
+  tags:
+    - opbeat
+    - upgrade

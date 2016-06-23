@@ -3,8 +3,6 @@
 
 - name: Install packages via pip opbeat
   sudo: yes
-  
   pip: name="{{ item.name }}" version="{{ item.version }}"
-  
-  when: opbeat_pip_dependencies is defined
-  with_items: opbeat_pip_dependencies
+  when: _opbeat_pip_dependencies is defined
+  with_items: _opbeat_pip_dependencies

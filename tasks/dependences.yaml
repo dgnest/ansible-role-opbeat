@@ -14,13 +14,11 @@
 - name: Install opbeat package dependencies
   sudo: yes
   apt:
-  
     name: "{{ item }}"
-  
     state: present
   register: install_opbeat_package_dependencies
-  when: opbeat_package_dependencies is defined
-  with_items: opbeat_package_dependencies
+  when: _opbeat_package_dependencies is defined
+  with_items: _opbeat_package_dependencies
   tags:
     - apt
     - dependencies
@@ -29,13 +27,11 @@
 - name: Install opbeat dependencies
   sudo: yes
   apt:
-  
     name: "{{ item.name }}"
-  
     state: present
   register: install_opbeat_dependencies
-  when: opbeat_dependencies is defined
-  with_items: opbeat_dependencies
+  when: _opbeat_dependencies is defined
+  with_items: _opbeat_dependencies
   tags:
     - apt
     - dependencies
