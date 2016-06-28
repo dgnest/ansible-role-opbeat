@@ -10,5 +10,6 @@
 - name: Install opbeat dependencies
   apt: name={{ item }} state=present update_cache=yes
   with_items: opbeat_packages
+  when: opbeat_packages is defined
   tags:
     - opbeat
