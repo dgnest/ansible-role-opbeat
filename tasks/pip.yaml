@@ -1,5 +1,5 @@
 ---
-# task for hadenlabs.opbeat
+# task for dgnest.opbeat
 
 - name: Install packages via pip opbeat
   sudo: yes

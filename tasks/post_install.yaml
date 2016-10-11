@@ -1,5 +1,5 @@
 ---
-# task for hadenlabs.opbeat
+# task for dgnest.opbeat
 
 - name: Upgrade Release Version
   sudo_user: "{{ user }}"
