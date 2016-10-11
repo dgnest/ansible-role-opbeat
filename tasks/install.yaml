@@ -1,5 +1,5 @@
 ---
-# task for hadenlabs.opbeat
+# task for dgnest.opbeat
 
 - include: install.d/CentOS.yaml
   when: ansible_distribution == "CentOS"

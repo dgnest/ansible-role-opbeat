@@ -1,6 +1,6 @@
 ---
 
-# task for hadenlabs.opbeat
+# task for dgnest.opbeat
 
 - name: include os specific variables
   include_vars: "{{ item }}"
