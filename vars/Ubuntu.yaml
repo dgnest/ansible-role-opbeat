@@ -1,5 +1,5 @@
 ---
-# vars file for hadenlabs.opbeat (Ubuntu specific)
+# vars file for dgnest.opbeat (Ubuntu specific)
 
 _opbeat_home_path: "/home/{{ user }}"
 _opbeat_file: "{{_opbeat_home_path}}/opbeat.sh"

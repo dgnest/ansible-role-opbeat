@@ -1,6 +1,6 @@
 ---
 
-# task file for hadenlabs.opbeat
+# task file for dgnest.opbeat
 
 - name: Update package repositories
   sudo: yes

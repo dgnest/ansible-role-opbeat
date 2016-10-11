@@ -1,5 +1,5 @@
 ---
-# task file for hadenlabs.opbeat
+# task file for dgnest.opbeat
 
 - name: copy templates
   template:

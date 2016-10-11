@@ -1,5 +1,5 @@
 ---
-# environment file for hadenlabs.opbeat
+# environment file for dgnest.opbeat
 
 - name: Create files opbeat
   sudo: yes

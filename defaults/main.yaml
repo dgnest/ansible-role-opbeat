@@ -1,5 +1,5 @@
 ---
-# defaults file for hadenlabs.opbeat
+# defaults file for dgnest.opbeat
 
 opbeat_organization_id: ''
 opbeat_app_id: ''
