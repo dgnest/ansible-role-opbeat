@@ -2,7 +2,8 @@
 # task for dgnest.opbeat
 
 - name: Upgrade Release Version
-  sudo_user: "{{ user }}"
+  become: true
+  become_user: "{{ user }}"
   shell: ". {{ _opbeat_file }}"
   tags:
     - opbeat

@@ -2,7 +2,7 @@
 # environment file for dgnest.opbeat
 
 - name: Create files opbeat
-  sudo: yes
+  become: true
   file:
     path: "{{ item.path }}"
     state: "{{ item.state }}"

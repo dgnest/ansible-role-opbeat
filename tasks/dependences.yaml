@@ -3,7 +3,7 @@
 # task file for dgnest.opbeat
 
 - name: Update package repositories
-  sudo: yes
+  become: true
   apt:
     update_cache: True
   when: ansible_distribution == "Ubuntu"
@@ -12,7 +12,7 @@
     - update_cache
 
 - name: Install opbeat package dependencies
-  sudo: yes
+  become: true
   apt:
     name: "{{ item }}"
     state: present
@@ -25,7 +25,7 @@
 - debug: var=install_opbeat_package_dependencies.stdout_lines
 
 - name: Install opbeat dependencies
-  sudo: yes
+  become: true
   apt:
     name: "{{ item.name }}"
     state: present
