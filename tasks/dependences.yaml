@@ -18,7 +18,7 @@
     state: present
   register: install_opbeat_package_dependencies
   when: _opbeat_package_dependencies is defined
-  with_items: _opbeat_package_dependencies
+  with_items: "{{ _opbeat_package_dependencies | default([]) }}"
   tags:
     - apt
     - dependencies
@@ -31,7 +31,7 @@
     state: present
   register: install_opbeat_dependencies
   when: _opbeat_dependencies is defined
-  with_items: _opbeat_dependencies
+  with_items: "{{ _opbeat_dependencies | default({}) }}"
   tags:
     - apt
     - dependencies
